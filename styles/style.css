@@ -120,53 +120,71 @@ footer {
 }
 
 
-/* Bestilling :) */
+
+
+
+
 .bestilling {
-    background-color: #491515;
-    color: #dc11be;
-    padding: 10px;
-    margin: 1px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
 }
 
-/* Objektet som holder bestillingene */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
 .artikkel_parent {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.artikkel {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    display: flex;
-
-    background-color: #dc11be;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-/* Artikkler under bestilling */
-.artikkel {
     text-align: center;
-    font-weight: bold;
-    display: block;
-
-    background-color: #F5E8D0; /* Lys beige */
-    width: 500px;
-    margin: 10px;
-    border-radius: 25px;
-    font-size: 1.2rem;
 }
 
-
+.artikkel h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
 
 .artikkel_innhold {
     display: flex;
-    align-items: center; /* Sentrerer innhold vertikalt */
-    justify-content: space-between; /* Plasserer tekst til venstre og bilde til høyre */
+    flex-direction: column;
+    align-items: center;
 }
 
 .artikkel_innhold p {
-    flex: 1;
-    margin-right: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.5;
 }
 
 .artikkel_innhold img {
-    width: 200px; /* Juster størrelsen etter behov */
-    height: 100px;
-    border-radius: 8px; /* Gjør bildet litt mykere */
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.artikkel_innhold img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }

@@ -71,6 +71,7 @@ body {
     position: absolute;
     bottom: 20px;
     display: flex;
+    flex-direction: row;
     gap: 20px;
 }
 
